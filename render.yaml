@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: telegram-gpt-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: 8066239879:AAGURepbswUiGB210v931Zu95mBswhXfVVs
+      - key: OPENAI_API_KEY
+        value: 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
